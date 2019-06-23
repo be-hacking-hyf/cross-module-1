@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>team page</title>
+
+  <script type="text/javascript">
+    // data (variables)
+    var team_name = "HackYourFuture";
+    var team_members = ["Ramzi", "Salem", "Hasan"];
+    // functions
+    function print_thing(team_name){
+      console.log("Hello to our team", team_name);
+    }
+    function print_thing(team_members){
+      console.log("Our members are", team_members);
+    }
+
+  </script>
+</head>
+
+<body>
+  <div class="greeting">
+<h1>Welcome to our team</h1>
+<button onclick="print_thing(team_name);">Team Name</button> <br>
+<p>your team members: <button onclick="print_thing(team_members);">Team Members</button> </p>
+<button onclick="print_thing(console.log;">Introduction</button> <br>
+
+</div>
+<a href="home.html">Return back to the homepage</a>
+</body>
+</html>
