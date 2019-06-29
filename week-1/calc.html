@@ -1,21 +1,47 @@
-<!doctype html>
+!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
-  <title>calc</title>
+  <title>calculation</title>
 
   <script type="text/javascript">
-    // data (variables)
-
+   // data (variables)
+   var x = 40;
+    var y= 20 ;
     // functions
+    function add(x,y){
 
+        return x + y;
+
+    }
+    function subtract(x,y){
+
+        return x - y;
+
+    }
+    function multiply(x,y){
+
+        return x * y;
+    }
+    function divide(x,y){
+
+        return x / y;
+    }
   </script>
 </head>
 
 <body>
+    <h1>Calculation Page</h1>
+    <p>There are some calculations below</p>
 
-
+   <button onclick="console.log(x,y);">Display X,Y </button> <br><br>
+   <button onclick="console.log(add(x,y));">Add</button> <br><br>
+   <button onclick="console.log(subtract(x,y));">Subtract</button> <br><br>
+   <button onclick="console.log(multiply(x,y));">Multiply</button> <br><br>
+   <button onclick="console.log(divide(x,y));">Divide</button> <br><br>
+    <hr>
+    <a href="./index.html">home</a> <br>
 </body>
 </html>
