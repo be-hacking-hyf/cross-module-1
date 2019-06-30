@@ -19,14 +19,17 @@ function print_name(teamName) {
 function print_members(teamMembers)
 console.log(teamMembers);
 
-
+function print_team_introduction(teamName, teamMembers) {
+    print_name(teamName);
+    print_members(teamMembers);
+}
+    
 </script>
 <body>
     <h1>Hi! This is Team Page</h1><br>
-        <button type="button" onclick="print_name(teamName('Anonymous'))" >Name</button><br><br>
-        
-        <button type="button" onclick="print_members(teamMembers["Jude", "Hans", "Rahime"])">Members</button><br><br>
-      
+        <button type="button" onclick="print_name(teamName)" >Name</button><br><br>
+        <button type="button" onclick="print_members(teamMembers)">Members</button><br><br>
+      <button type="button" onclick="print_team_introduction(teamName, teamMembers)">Introduction</button>
    <a href="./index.html">Home Page</a>
     
 </body>
