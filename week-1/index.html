@@ -1,22 +1,36 @@
-<!doctype html>
-
+!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>home page</title>
 
-  <script type="text/javascript">
-    // data (variables)
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home Page</title>
+    </head>
+    <script type="text/javascript" >
+        // data (variables)
+        var object = {
+            name: "Help Everybody",
+            link: "http/www.helpeverybody.com",
+            description: "Charity Organization"
+            };
 
-    // functions
+        // functions
+        function print_deets(object) {
+            console.log(object.name);
+            console.log(object.link);
+            console.log(object.description);
+        }
+       
+    </script>
+  
+    <body>
+        <h1>Project Website</h1>
+        <p>This is our homepage.</p>
+        <button onclick="print_deets(object)">Project Details</button><br>
 
-  </script>
-</head>
-
-<body>
-  <h1>week 1 index.html</a>
-  <!-- delete this button when you're ready to start! -->
-  <a href="./example-to-study.html">example to study</a>
-</body>
+        <br><a href="./calc.html">Calculation Page</a><br>
+        <br><a href="./team.html">Team Page</a><br>
+    </body>
 </html>

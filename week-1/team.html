@@ -1,20 +1,36 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>team page</title>
-
-  <script type="text/javascript">
-    // data (variables)
-
-    // functions
-
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
+<script type="text/javascript">
 
+var teamName ="Anonymous";
+var teamMembers =["Jude", "Hans", "Rahime"];
+
+//Functions
+function print_name(teamName) {
+    console.log(teamName);
+    
+}
+function print_members(teamMembers)
+console.log(teamMembers);
+
+function print_team_introduction(teamName, teamMembers) {
+    print_name(teamName);
+    print_members(teamMembers);
+}
+    
+</script>
 <body>
-
+    <h1>Hi! This is Team Page</h1><br>
+        <button type="button" onclick="print_name(teamName)" >Name</button><br><br>
+        <button type="button" onclick="print_members(teamMembers)">Members</button><br><br>
+      <button type="button" onclick="print_team_introduction(teamName, teamMembers)">Introduction</button>
+   <a href="./index.html">Home Page</a>
+    
 </body>
 </html>
