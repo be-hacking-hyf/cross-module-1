@@ -1,22 +1,28 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>home page</title>
-
-  <script type="text/javascript">
-    // data (variables)
-
-    // functions
-
-  </script>
+  <title>Homework JS-1</title>
+  <h1>Welcome to my HomePage</h1>
+  <p>This is a JavaScript Homework WepPage of Week 1</p>
+  <div class="mainmenu">
+        <a href="./index.html">Home</a> 
+        <a href="./team.html">Team</a> 
+        <a href="./calc.html">Calculator</a> 
+    </div>
+  <hr>
 </head>
 
 <body>
-  <h1>week 1 index.html</a>
-  <!-- delete this button when you're ready to start! -->
-  <a href="./example-to-study.html">example to study</a>
+
+    <p>Press <strong>Button</strong> to print project details to the console.</p>
+    <p>Press <strong>F12</strong> on your keyboard to view project details in the console view.</p>
+       <script>
+        var obj = { name : "Mesut", link : "https://github.com/Efiloglu/javascript-1-cross-module/tree/master/week-1", description : "js homework " };
+        function print_deets() {
+            console.log(obj);
+        }
+       </script>
+  <button onclick="print_deets();">Project Details</button> <br>
 </body>
 </html>

@@ -1,20 +1,35 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>team page</title>
-
-  <script type="text/javascript">
-    // data (variables)
-
-    // functions
-
-  </script>
+  <title>Team</title>
+  <h1>Welcome to my Team Page</h1>
+  <div class="mainmenu">
+        <a href="./index.html">Home</a> 
+        <a href="./team.html">Team</a> 
+        <a href="./calc.html">Calculator</a> 
+    </div>
+  <hr>
 </head>
 
 <body>
-
+        <p>Press <strong>F12</strong> on your keyboard to view Team details in the console view.</p>
+       <script>
+        var team_name = "HYF-Belgium";
+        var team_members= ["Jamal","Berihu","Saliha","Ramzi","Rahime","Harun","Hakan","Melrose","Nelson","Kelemu","Ebru","Mesut","Heighine","Fatma","Aimal"];
+        
+        function print_team_name() {
+            console.log(team_name);
+        }
+        function print_team_members() {
+            console.log("Team members are : " + team_members);
+        }
+        function print_both(){
+            console.log(team_name + " JS Homework - 1 Team : " + team_members);
+        }
+       </script>
+  <button onclick="print_team_name();">Team Name</button> 
+  <button onclick="print_team_members();">Team Members</button> 
+  <button onclick="print_both();">Both</button> 
 </body>
 </html>
